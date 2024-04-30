@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: open-flights-app
+  name: open-flights-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: open-flights-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: open-flights-app
+    spec:
+      containers:
+      - image: hawkinswinja/open-flights:v1
+        name: open-flights
+        imagePullPolicy: IfNotPresent
+        resources: {}
+        envFrom:
+        - secretRef:
+            name: postgresql
+
+status: {}
