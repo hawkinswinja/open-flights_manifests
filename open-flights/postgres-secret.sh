@@ -7,4 +7,5 @@ kubectl create secret generic postgresql \
   --from-literal POSTGRES_DB="postgresdb" \
   --from-literal REPLICATION_USER="replicationuser" \
   --from-literal REPLICATION_PASSWORD='replicationPassword' \
-  --from-literal POSTGRES_HOST='postgres-svc'
+  --from-literal POSTGRES_HOST='postgres-svc' \
+  -n open-flights
