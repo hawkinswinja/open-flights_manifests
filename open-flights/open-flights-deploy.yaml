@@ -18,7 +18,7 @@ spec:
         app: open-flights-app
     spec:
       containers:
-      - image: hawkinswinja/open-flights:v1
+      - image: hawkinswinja/open-flights:v2
         name: open-flights
         imagePullPolicy: IfNotPresent
         resources: {}
