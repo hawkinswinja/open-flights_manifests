@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: open-flights-app
+    env: dev
   name: open-flights-svc
 spec:
   # type: NodePort
@@ -13,5 +14,6 @@ spec:
     # nodePort: 30000
   selector:
     app: open-flights-app
+    env: dev
 status:
   loadBalancer: {}

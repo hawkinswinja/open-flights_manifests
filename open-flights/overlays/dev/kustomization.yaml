@@ -22,8 +22,6 @@ patches:
         targetPort: 3000
         nodePort: 30000
       type: NodePort
-      selector:
-        app: dev-open-flights-app
      
   target:
     # group: apps
