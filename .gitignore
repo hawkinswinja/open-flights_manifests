@@ -1,3 +1,4 @@
 archive
 pgdata
 /open-flights/postgres-pv.yaml
+/open-flights/postgres-credentials.txt

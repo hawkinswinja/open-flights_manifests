@@ -22,8 +22,8 @@ spec:
         name: open-flights
         imagePullPolicy: IfNotPresent
         resources: {}
-        envFrom:
-        - secretRef:
-            name: postgresql
+        # envFrom:
+        # - secretRef:
+        #     name: postgres-secret
 
 status: {}
