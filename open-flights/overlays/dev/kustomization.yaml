@@ -1,9 +1,5 @@
 resources:
 - ../../base
-
-commonLabels:
-  app: dev-open-flights-app
-  env: dev
   
 namePrefix: dev-
 
