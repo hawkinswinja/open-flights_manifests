@@ -1,6 +1,9 @@
 resources:
 - ../base
 
+namespace: open-flights-dev
+namePrefix: dev-
+
 patches:
 - patch: |-
     apiVersion: v1
